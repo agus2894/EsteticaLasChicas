@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peluquería - Estetica Las Chicas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carousel.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="page-header">
+        <a href="index.html" class="back-btn">← Volver al inicio</a>
+        <h1>Peluquería</h1>
+    </header>
+
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide active">
+                    <div class="placeholder-image">
+                        <span>Foto 1 - Corte de cabello</span>
+                    </div>
+                    <p class="carousel-caption">Cortes modernos</p>
+                </div>
+                <div class="carousel-slide">
+                    <div class="placeholder-image">
+                        <span>Foto 2 - Peinados</span>
+                    </div>
+                    <p class="carousel-caption">Peinados para eventos</p>
+                </div>
+                <div class="carousel-slide">
+                    <div class="placeholder-image">
+                        <span>Foto 3 - Coloración</span>
+                    </div>
+                    <p class="carousel-caption">Coloración profesional</p>
+                </div>
+                <div class="carousel-slide">
+                    <div class="placeholder-image">
+                        <span>Foto 4 - Tratamientos</span>
+                    </div>
+                    <p class="carousel-caption">Tratamientos capilares</p>
+                </div>
+            </div>
+            
+            <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+            <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+            
+            <div class="carousel-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+        <div class="service-info">
+            <h2>Nuestros Servicios de Peluquería</h2>
+            <ul>
+                <li>Corte de cabello para dama y caballero</li>
+                <li>Peinados para eventos especiales</li>
+                <li>Coloración y mechas</li>
+                <li>Tratamientos de hidratación</li>
+                <li>Alisados y permanentes</li>
+            </ul>
+        </div>
+
+        <!-- Antes y Después Section -->
+        <div class="antes-despues-section">
+            <h2>Transformaciones</h2>
+            <p class="subtitle">Cambios de look que enamoran</p>
+            <div class="antes-despues-grid">
+                <div class="antes-despues-card">
+                    <div class="comparison">
+                        <div class="antes">
+                            <div class="placeholder-comparison">ANTES</div>
+                        </div>
+                        <div class="despues">
+                            <div class="placeholder-comparison">DESPUÉS</div>
+                        </div>
+                    </div>
+                    <p class="comparison-title">Coloración Completa</p>
+                </div>
+                <div class="antes-despues-card">
+                    <div class="comparison">
+                        <div class="antes">
+                            <div class="placeholder-comparison">ANTES</div>
+                        </div>
+                        <div class="despues">
+                            <div class="placeholder-comparison">DESPUÉS</div>
+                        </div>
+                    </div>
+                    <p class="comparison-title">Corte y Brushing</p>
+                </div>
+                <div class="antes-despues-card">
+                    <div class="comparison">
+                        <div class="antes">
+                            <div class="placeholder-comparison">ANTES</div>
+                        </div>
+                        <div class="despues">
+                            <div class="placeholder-comparison">DESPUÉS</div>
+                        </div>
+                    </div>
+                    <p class="comparison-title">Peinado para Evento</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Estetica Las Chicas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="carousel.js"></script>
+</body>
+</html>

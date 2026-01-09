@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piel - Estetica Las Chicas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carousel.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="page-header">
+        <a href="index.html" class="back-btn">← Volver al inicio</a>
+        <h1>Cuidado de la Piel</h1>
+    </header>
+
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide active">
+                    <div class="placeholder-image">
+                        <span>Foto 1 - Limpieza facial</span>
+                    </div>
+                    <p class="carousel-caption">Limpieza facial profunda</p>
+                </div>
+                <div class="carousel-slide">
+                    <div class="placeholder-image">
+                        <span>Foto 2 - Tratamiento anti-edad</span>
+                    </div>
+                    <p class="carousel-caption">Tratamientos anti-edad</p>
+                </div>
+                <div class="carousel-slide">
+                    <div class="placeholder-image">
+                        <span>Foto 3 - Hidratación</span>
+                    </div>
+                    <p class="carousel-caption">Hidratación profunda</p>
+                </div>
+                <div class="carousel-slide">
+                    <div class="placeholder-image">
+                        <span>Foto 4 - Mascarillas</span>
+                    </div>
+                    <p class="carousel-caption">Mascarillas especiales</p>
+                </div>
+            </div>
+            
+            <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+            <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+            
+            <div class="carousel-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+        <div class="service-info">
+            <h2>Nuestros Servicios de Piel</h2>
+            <ul>
+                <li>Limpieza facial profunda</li>
+                <li>Tratamientos anti-edad</li>
+                <li>Hidratación y nutrición</li>
+                <li>Exfoliación y peeling</li>
+                <li>Tratamientos para acné</li>
+                <li>Mascarillas personalizadas</li>
+            </ul>
+        </div>
+
+        <!-- Antes y Después Section -->
+        <div class="antes-despues-section">
+            <h2>Resultados Reales</h2>
+            <p class="subtitle">Mirá las transformaciones de nuestras clientas</p>
+            <div class="antes-despues-grid">
+                <div class="antes-despues-card">
+                    <div class="comparison">
+                        <div class="antes">
+                            <div class="placeholder-comparison">ANTES</div>
+                        </div>
+                        <div class="despues">
+                            <div class="placeholder-comparison">DESPUÉS</div>
+                        </div>
+                    </div>
+                    <p class="comparison-title">Tratamiento Anti-Edad</p>
+                </div>
+                <div class="antes-despues-card">
+                    <div class="comparison">
+                        <div class="antes">
+                            <div class="placeholder-comparison">ANTES</div>
+                        </div>
+                        <div class="despues">
+                            <div class="placeholder-comparison">DESPUÉS</div>
+                        </div>
+                    </div>
+                    <p class="comparison-title">Limpieza Facial Profunda</p>
+                </div>
+                <div class="antes-despues-card">
+                    <div class="comparison">
+                        <div class="antes">
+                            <div class="placeholder-comparison">ANTES</div>
+                        </div>
+                        <div class="despues">
+                            <div class="placeholder-comparison">DESPUÉS</div>
+                        </div>
+                    </div>
+                    <p class="comparison-title">Tratamiento para Acné</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Estetica Las Chicas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="carousel.js"></script>
+</body>
+</html>
