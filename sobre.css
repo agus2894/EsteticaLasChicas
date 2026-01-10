@@ -177,8 +177,14 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+    .sobre-content {
+        padding: 40px 15px;
+    }
+
     .sobre-hero {
         grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 60px;
     }
 
     .sobre-text h2,
@@ -186,5 +192,62 @@
     .equipo-section h2,
     .cta-section h2 {
         font-size: 2rem;
+    }
+
+    .sobre-text p {
+        font-size: 1rem;
+    }
+
+    .sobre-imagen .placeholder-image {
+        height: 250px;
+        font-size: 1.1rem;
+    }
+
+    .valores-section,
+    .equipo-section {
+        margin-bottom: 60px;
+    }
+
+    .valores-grid,
+    .equipo-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .valor-card,
+    .equipo-card {
+        padding: 30px 20px;
+    }
+
+    .valor-card h3,
+    .equipo-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .cta-section {
+        padding: 40px 20px;
+    }
+
+    .cta-section p {
+        font-size: 1rem;
+    }
+
+    .cta-btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
+
+/* Mobile pequeños */
+@media (max-width: 480px) {
+    .sobre-text h2,
+    .valores-section h2,
+    .equipo-section h2,
+    .cta-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .sobre-imagen .placeholder-image {
+        height: 200px;
     }
 }

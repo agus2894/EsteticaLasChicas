@@ -720,20 +720,58 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+
+    .social-bar {
+        padding: 10px 0;
+    }
+
+    .social-container {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .social-text {
+        display: none;
+    }
+
     .main-title {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+        letter-spacing: 1px;
+        padding: 10px;
+    }
+
+    .main-title::before {
+        transform: translate(2px, 2px);
+    }
+
+    .logo-placeholder {
+        width: 120px;
+        height: 120px;
+        font-size: 1rem;
+    }
+
+    .scroll-indicator span {
+        font-size: 0.9rem;
     }
 
     .section-title {
-        font-size: 2rem;
-    }
-
-    .service-card h3 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        margin-bottom: 40px;
     }
 
     .service-card {
-        padding: 40px 20px;
+        padding: 40px 25px;
+    }
+
+    .service-card h3 {
+        font-size: 2.2rem;
+    }
+
+    .service-card p {
+        font-size: 1.1rem;
     }
 
     .services-carousel-container {
@@ -741,17 +779,52 @@ footer {
     }
 
     .services-carousel-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 1.2rem;
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+
+    .services-carousel-btn.prev {
+        left: 5px;
+    }
+
+    .services-carousel-btn.next {
+        right: 5px;
     }
 
     .promo-banner h2 {
-        font-size: 1.8rem;
+        font-size: 2rem;
+    }
+
+    .promo-text {
+        font-size: 1.1rem;
+    }
+
+    .price-grid,
+    .testimonios-grid,
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .price-card,
+    .testimonio-card,
+    .info-box {
+        padding: 25px;
     }
 
     .contacto-grid {
         grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contacto-form {
+        padding: 30px 20px;
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 
     .whatsapp-float {
@@ -759,5 +832,46 @@ footer {
         right: 20px;
         width: 55px;
         height: 55px;
+    }
+
+    .whatsapp-float svg {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Mobile pequeños */
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 2.2rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .services-carousel-container {
+        padding: 20px 40px;
+    }
+
+    .promo-banner h2 {
+        font-size: 1.6rem;
+    }
+
+    .promo-text {
+        font-size: 1rem;
+    }
+
+    .promo-btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+
+    .instagram-grid {
+        grid-template-columns: 1fr;
     }
 }
