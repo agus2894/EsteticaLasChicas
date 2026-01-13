@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uñas - Estetica Las Chicas</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="carousel.css">
 </head>
@@ -69,7 +70,20 @@
         <!-- Antes y Después Section -->
         <div class="antes-despues-section">
             <h2>Nuestros Trabajos</h2>
-            <p class="subtitle">Diseños únicos para cada clienta</p>
+            <p class="subtitle">Diseños únicos para cada clienta - Arrastrá el slider para comparar</p>
+            
+            <!-- Comparador Interactivo Principal -->
+            <div class="comparador-antes-despues" style="aspect-ratio: 16/9;">
+                <div class="imagen-antes" style="background-image: url('https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
+                    <span class="etiqueta-comparador etiqueta-antes">ANTES</span>
+                </div>
+                <div class="imagen-despues" style="background-image: url('https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
+                    <span class="etiqueta-comparador etiqueta-despues">DESPUÉS</span>
+                </div>
+                <div class="slider-comparador"></div>
+            </div>
+
+            <!-- Grid de ejemplos adicionales -->
             <div class="antes-despues-grid">
                 <div class="antes-despues-card">
                     <div class="comparison">
@@ -113,5 +127,6 @@
     </footer>
 
     <script src="carousel.js"></script>
+    <script src="comparador.js"></script>
 </body>
 </html>

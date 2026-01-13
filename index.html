@@ -3,10 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estetica Las Chicas</title>
+    <title>Estetica Las Chicas - Centro de Belleza y Estética</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Centro de estética especializado en uñas, peluquería y tratamientos faciales. Diseños personalizados y atención profesional.">
+    <meta name="keywords" content="estética, uñas, manicura, peluquería, tratamientos faciales, belleza">
+    <meta name="author" content="Estetica Las Chicas">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Estetica Las Chicas - Centro de Belleza">
+    <meta property="og:description" content="Tu centro de belleza de confianza. Uñas, peluquería y cuidado de la piel.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -48,7 +64,7 @@
     </section>
 
     <!-- Promociones Section -->
-    <section class="promociones">
+    <section class="promociones fade-in">
         <div class="container">
             <div class="promo-banner">
                 <h2>🎉 ¡Promoción del Mes!</h2>
@@ -59,7 +75,7 @@
     </section>
 
     <!-- Services Section -->
-    <section class="services">
+    <section class="services fade-in">
         <div class="container">
             <h2 class="section-title">Nuestros Servicios</h2>
             
@@ -108,7 +124,7 @@
     </section>
 
     <!-- Precios Section -->
-    <section class="precios">
+    <section class="precios fade-in">
         <div class="container">
             <h2 class="section-title">Nuestros Precios</h2>
             <div class="price-grid">
@@ -144,7 +160,7 @@
     </section>
 
     <!-- Testimonios Section -->
-    <section class="testimonios">
+    <section class="testimonios fade-in">
         <div class="container">
             <h2 class="section-title">Lo que dicen nuestras clientas</h2>
             <div class="testimonios-grid">
@@ -167,6 +183,46 @@
         </div>
     </section>
 
+    <!-- Horarios de Atención Section -->
+    <section class="horarios-section fade-in">
+        <div class="container">
+            <h2 class="section-title">Horarios de Atención</h2>
+            <p class="subtitle">Estamos para vos en los siguientes horarios</p>
+            <div class="horarios-grid">
+                <div class="horario-card">
+                    <div class="dia-grupo">
+                        <h3>Lunes a Viernes</h3>
+                        <div class="horario">
+                            <span class="icono">🕐</span>
+                            <span class="hora">9:00 - 20:00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="horario-card">
+                    <div class="dia-grupo">
+                        <h3>Sábados</h3>
+                        <div class="horario">
+                            <span class="icono">🕐</span>
+                            <span class="hora">9:00 - 18:00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="horario-card cerrado">
+                    <div class="dia-grupo">
+                        <h3>Domingos</h3>
+                        <div class="horario">
+                            <span class="icono">🔒</span>
+                            <span class="hora">Cerrado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="horarios-note">
+                <p>📌 <strong>Importante:</strong> Trabajamos únicamente con turnos previos. Contactanos por WhatsApp para reservar.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Horarios y Contacto Section -->
     <section class="info-section">
         <div class="container">
@@ -177,23 +233,23 @@
                     <a href="sobre-nosotros.html" class="link-btn">Conocé más sobre nosotros</a>
                 </div>
                 <div class="info-box">
-                    <h3>🕐 Horarios de Atención</h3>
-                    <p>Lunes a Viernes: 9:00 - 20:00<br>
-                    Sábados: 9:00 - 18:00<br>
-                    Domingos: Cerrado</p>
-                </div>
-                <div class="info-box">
                     <h3>📞 Contacto</h3>
-                    <p>WhatsApp: +54 9 11 2345-6789<br>
+                    <p>WhatsApp: +54 9 11 2650-1037<br>
                     Email: info@esteticalaschicas.com<br>
                     Instagram: @esteticalaschicas</p>
+                </div>
+                <div class="info-box">
+                    <h3>💳 Medios de Pago</h3>
+                    <p>Efectivo<br>
+                    Mercado Pago<br>
+                    Transferencia Bancaria</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contacto y Mapa Section -->
-    <section id="contacto" class="contacto">
+    <section id="contacto" class="contacto fade-in">
         <div class="container">
             <h2 class="section-title">Reservá tu turno</h2>
             <div class="contacto-grid">
@@ -238,29 +294,6 @@
                     <p class="mapa-note">* Actualizá la dirección con tu ubicación real</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Instagram Feed Section -->
-    <section class="instagram-section">
-        <div class="container">
-            <h2 class="section-title">Seguinos en Instagram</h2>
-            <p class="instagram-subtitle">@esteticalaschicas</p>
-            <div class="instagram-grid">
-                <div class="instagram-post">
-                    <div class="placeholder-instagram">📸</div>
-                </div>
-                <div class="instagram-post">
-                    <div class="placeholder-instagram">📸</div>
-                </div>
-                <div class="instagram-post">
-                    <div class="placeholder-instagram">📸</div>
-                </div>
-                <div class="instagram-post">
-                    <div class="placeholder-instagram">📸</div>
-                </div>
-            </div>
-            <a href="https://www.instagram.com" target="_blank" class="instagram-btn">Ver más en Instagram</a>
         </div>
     </section>
 

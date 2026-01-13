@@ -12,6 +12,51 @@ body {
     padding-top: 50px; /* Espacio para la barra fija */
 }
 
+/* Animaciones de Scroll */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scale-in {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scale-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
 /* Social Media Bar */
 .social-bar {
     position: fixed;
@@ -487,6 +532,94 @@ footer {
 .testimonio-author {
     font-weight: bold;
     color: #ff6b9d;
+}
+
+/* Horarios de Atención Section */
+.horarios-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #fff5f7 0%, #ffe8ec 100%);
+}
+
+.horarios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.horario-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(255, 107, 157, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid transparent;
+}
+
+.horario-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(255, 107, 157, 0.25);
+    border-color: #ff9a9e;
+}
+
+.horario-card.cerrado {
+    opacity: 0.7;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+}
+
+.dia-grupo h3 {
+    font-size: 1.5rem;
+    color: #ff6b9d;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.horario-card.cerrado .dia-grupo h3 {
+    color: #999;
+}
+
+.horario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.3rem;
+}
+
+.horario .icono {
+    font-size: 2rem;
+}
+
+.horario .hora {
+    font-weight: 600;
+    color: #333;
+}
+
+.horario-card.cerrado .hora {
+    color: #999;
+}
+
+.horarios-note {
+    max-width: 800px;
+    margin: 40px auto 0;
+    padding: 25px 30px;
+    background: linear-gradient(135deg, #fff9e6 0%, #ffe8cc 100%);
+    border-left: 5px solid #ffb347;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.horarios-note p {
+    color: #8b5e3c;
+    font-size: 1.05rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.horarios-note strong {
+    color: #ff6b35;
 }
 
 /* Info Section */
