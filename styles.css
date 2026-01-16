@@ -144,35 +144,30 @@ body {
     box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
 }
 
-.main-title {
-    font-size: 5rem;
+.hero-title {
+    font-size: 6rem;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-family: 'Great Vibes', cursive;
-    letter-spacing: 3px;
-    color: #fff;
+    letter-spacing: 4px;
+    color: #3d1635;
     text-shadow: 
-        3px 3px 0px rgba(139, 69, 139, 0.8),
-        5px 5px 15px rgba(0, 0, 0, 0.5),
-        0 0 30px rgba(255, 255, 255, 0.5);
-    background: linear-gradient(45deg, #fff, #ffe6f0, #fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+        3px 3px 0px rgba(255, 255, 255, 0.8),
+        5px 5px 0px rgba(255, 255, 255, 0.6),
+        7px 7px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.2));
     position: relative;
-    padding: 10px 20px;
 }
 
-.main-title::before {
-    content: 'Estetica Las Chicas';
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    color: #8b458b;
-    text-shadow: none;
-    -webkit-text-fill-color: #8b458b;
-    transform: translate(4px, 4px);
+.hero-subtitle {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: #3d1635;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+    letter-spacing: 2px;
+    font-family: 'Playfair Display', serif;
 }
 
 .scroll-indicator {
