@@ -70,53 +70,78 @@
         <!-- Antes y Después Section -->
         <div class="antes-despues-section">
             <h2>Nuestros Trabajos</h2>
-            <p class="subtitle">Diseños únicos para cada clienta - Arrastrá el slider para comparar</p>
+            <p class="subtitle">Deslizá las imágenes para ver las transformaciones</p>
             
-            <!-- Comparador Interactivo Principal -->
-            <div class="comparador-antes-despues" style="aspect-ratio: 16/9;">
-                <div class="imagen-antes" style="background-image: url('https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
-                    <span class="etiqueta-comparador etiqueta-antes">ANTES</span>
-                </div>
-                <div class="imagen-despues" style="background-image: url('https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
-                    <span class="etiqueta-comparador etiqueta-despues">DESPUÉS</span>
-                </div>
-                <div class="slider-comparador"></div>
-            </div>
+            <!-- Carrusel de Comparadores -->
+            <div class="comparadores-carousel-container">
+                <div class="comparadores-carousel">
+                    <!-- Comparador 1: Manicura Semipermanente -->
+                    <div class="comparador-slide active">
+                        <div class="comparador-antes-despues" style="aspect-ratio: 16/9;">
+                            <div class="imagen-antes" style="background-image: url('https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
+                                <span class="etiqueta-comparador etiqueta-antes">ANTES</span>
+                            </div>
+                            <div class="imagen-despues" style="background-image: url('https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
+                                <span class="etiqueta-comparador etiqueta-despues">DESPUÉS</span>
+                            </div>
+                            <div class="slider-comparador"></div>
+                        </div>
+                        <h3 class="comparador-titulo">Manicura Semipermanente</h3>
+                    </div>
 
-            <!-- Grid de ejemplos adicionales -->
-            <div class="antes-despues-grid">
-                <div class="antes-despues-card">
-                    <div class="comparison">
-                        <div class="antes">
-                            <div class="placeholder-comparison">ANTES</div>
+                    <!-- Comparador 2: Uñas Esculpidas -->
+                    <div class="comparador-slide">
+                        <div class="comparador-antes-despues" style="aspect-ratio: 16/9;">
+                            <div class="imagen-antes" style="background-image: url('https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
+                                <span class="etiqueta-comparador etiqueta-antes">ANTES</span>
+                            </div>
+                            <div class="imagen-despues" style="background-image: url('https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
+                                <span class="etiqueta-comparador etiqueta-despues">DESPUÉS</span>
+                            </div>
+                            <div class="slider-comparador"></div>
                         </div>
-                        <div class="despues">
-                            <div class="placeholder-comparison">DESPUÉS</div>
-                        </div>
+                        <h3 class="comparador-titulo">Uñas Esculpidas</h3>
                     </div>
-                    <p class="comparison-title">Manicura Semipermanente</p>
+
+                    <!-- Comparador 3: Nail Art -->
+                    <div class="comparador-slide">
+                        <div class="comparador-antes-despues" style="aspect-ratio: 16/9;">
+                            <div class="imagen-antes" style="background-image: url('https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
+                                <span class="etiqueta-comparador etiqueta-antes">ANTES</span>
+                            </div>
+                            <div class="imagen-despues" style="background-image: url('https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
+                                <span class="etiqueta-comparador etiqueta-despues">DESPUÉS</span>
+                            </div>
+                            <div class="slider-comparador"></div>
+                        </div>
+                        <h3 class="comparador-titulo">Nail Art</h3>
+                    </div>
+
+                    <!-- Comparador 4: Pedicura -->
+                    <div class="comparador-slide">
+                        <div class="comparador-antes-despues" style="aspect-ratio: 16/9;">
+                            <div class="imagen-antes" style="background-image: url('https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
+                                <span class="etiqueta-comparador etiqueta-antes">ANTES</span>
+                            </div>
+                            <div class="imagen-despues" style="background-image: url('https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
+                                <span class="etiqueta-comparador etiqueta-despues">DESPUÉS</span>
+                            </div>
+                            <div class="slider-comparador"></div>
+                        </div>
+                        <h3 class="comparador-titulo">Pedicura Completa</h3>
+                    </div>
                 </div>
-                <div class="antes-despues-card">
-                    <div class="comparison">
-                        <div class="antes">
-                            <div class="placeholder-comparison">ANTES</div>
-                        </div>
-                        <div class="despues">
-                            <div class="placeholder-comparison">DESPUÉS</div>
-                        </div>
-                    </div>
-                    <p class="comparison-title">Uñas Esculpidas</p>
-                </div>
-                <div class="antes-despues-card">
-                    <div class="comparison">
-                        <div class="antes">
-                            <div class="placeholder-comparison">ANTES</div>
-                        </div>
-                        <div class="despues">
-                            <div class="placeholder-comparison">DESPUÉS</div>
-                        </div>
-                    </div>
-                    <p class="comparison-title">Nail Art</p>
+
+                <!-- Botones de navegación -->
+                <button class="comparador-nav prev" onclick="moveComparadorSlide(-1)">❮</button>
+                <button class="comparador-nav next" onclick="moveComparadorSlide(1)">❯</button>
+
+                <!-- Indicadores -->
+                <div class="comparador-dots">
+                    <span class="comparador-dot active" onclick="goToComparadorSlide(0)"></span>
+                    <span class="comparador-dot" onclick="goToComparadorSlide(1)"></span>
+                    <span class="comparador-dot" onclick="goToComparadorSlide(2)"></span>
+                    <span class="comparador-dot" onclick="goToComparadorSlide(3)"></span>
                 </div>
             </div>
         </div>

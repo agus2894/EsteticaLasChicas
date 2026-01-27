@@ -307,6 +307,105 @@
     margin-top: 40px;
 }
 
+/* Carrusel de Comparadores */
+.comparadores-carousel-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.comparadores-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.comparador-slide {
+    display: none;
+    width: 100%;
+}
+
+.comparador-slide.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.comparador-titulo {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #667eea;
+    margin-top: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+/* Botones de navegación del carrusel */
+.comparador-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(102, 126, 234, 0.9);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comparador-nav:hover {
+    background: #667eea;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.comparador-nav.prev {
+    left: 0;
+}
+
+.comparador-nav.next {
+    right: 0;
+}
+
+/* Indicadores del carrusel */
+.comparador-dots {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.comparador-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.comparador-dot:hover {
+    background: #bbb;
+    transform: scale(1.2);
+}
+
+.comparador-dot.active {
+    background: #667eea;
+    width: 14px;
+    height: 14px;
+}
+
 .antes-despues-card {
     background: white;
     border-radius: 15px;

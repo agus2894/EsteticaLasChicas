@@ -66,3 +66,48 @@ document.addEventListener('DOMContentLoaded', function() {
         comparador.addEventListener('click', updateSlider);
     });
 });
+
+// Carrusel de comparadores
+let currentComparadorSlide = 0;
+
+function showComparadorSlide(index) {
+    const slides = document.querySelectorAll('.comparador-slide');
+    const dots = document.querySelectorAll('.comparador-dot');
+    
+    if (!slides.length) return;
+    
+    if (index >= slides.length) {
+        currentComparadorSlide = 0;
+    } else if (index < 0) {
+        currentComparadorSlide = slides.length - 1;
+    } else {
+        currentComparadorSlide = index;
+    }
+    
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === currentComparadorSlide) {
+            slide.classList.add('active');
+        }
+    });
+    
+    dots.forEach((dot, i) => {
+        dot.classList.remove('active');
+        if (i === currentComparadorSlide) {
+            dot.classList.add('active');
+        }
+    });
+}
+
+function moveComparadorSlide(direction) {
+    showComparadorSlide(currentComparadorSlide + direction);
+}
+
+function goToComparadorSlide(index) {
+    showComparadorSlide(index);
+}
+
+// Auto-play (opcional, descomentá si querés que avance solo)
+// setInterval(() => {
+//     moveComparadorSlide(1);
+// }, 5000);

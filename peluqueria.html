@@ -70,53 +70,78 @@
         <!-- Antes y Después Section -->
         <div class="antes-despues-section">
             <h2>Transformaciones</h2>
-            <p class="subtitle">Cambios de look que enamoran - Arrastrá el slider para comparar</p>
+            <p class="subtitle">Deslizá las imágenes para ver las transformaciones</p>
             
-            <!-- Comparador Interactivo Principal -->
-            <div class="comparador-antes-despues" style="aspect-ratio: 16/9;">
-                <div class="imagen-antes" style="background-image: url('https://images.unsplash.com/photo-1595475884562-073c30d45670?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
-                    <span class="etiqueta-comparador etiqueta-antes">ANTES</span>
-                </div>
-                <div class="imagen-despues" style="background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
-                    <span class="etiqueta-comparador etiqueta-despues">DESPUÉS</span>
-                </div>
-                <div class="slider-comparador"></div>
-            </div>
+            <!-- Carrusel de Comparadores -->
+            <div class="comparadores-carousel-container">
+                <div class="comparadores-carousel">
+                    <!-- Comparador 1: Coloración -->
+                    <div class="comparador-slide active">
+                        <div class="comparador-antes-despues" style="aspect-ratio: 16/9;">
+                            <div class="imagen-antes" style="background-image: url('https://images.unsplash.com/photo-1595475884562-073c30d45670?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
+                                <span class="etiqueta-comparador etiqueta-antes">ANTES</span>
+                            </div>
+                            <div class="imagen-despues" style="background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
+                                <span class="etiqueta-comparador etiqueta-despues">DESPUÉS</span>
+                            </div>
+                            <div class="slider-comparador"></div>
+                        </div>
+                        <h3 class="comparador-titulo">Coloración Completa</h3>
+                    </div>
 
-            <!-- Grid de ejemplos adicionales -->
-            <div class="antes-despues-grid">
-                <div class="antes-despues-card">
-                    <div class="comparison">
-                        <div class="antes">
-                            <div class="placeholder-comparison">ANTES</div>
+                    <!-- Comparador 2: Corte y Brushing -->
+                    <div class="comparador-slide">
+                        <div class="comparador-antes-despues" style="aspect-ratio: 16/9;">
+                            <div class="imagen-antes" style="background-image: url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
+                                <span class="etiqueta-comparador etiqueta-antes">ANTES</span>
+                            </div>
+                            <div class="imagen-despues" style="background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
+                                <span class="etiqueta-comparador etiqueta-despues">DESPUÉS</span>
+                            </div>
+                            <div class="slider-comparador"></div>
                         </div>
-                        <div class="despues">
-                            <div class="placeholder-comparison">DESPUÉS</div>
-                        </div>
+                        <h3 class="comparador-titulo">Corte y Brushing</h3>
                     </div>
-                    <p class="comparison-title">Coloración Completa</p>
+
+                    <!-- Comparador 3: Peinado para Evento -->
+                    <div class="comparador-slide">
+                        <div class="comparador-antes-despues" style="aspect-ratio: 16/9;">
+                            <div class="imagen-antes" style="background-image: url('https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
+                                <span class="etiqueta-comparador etiqueta-antes">ANTES</span>
+                            </div>
+                            <div class="imagen-despues" style="background-image: url('https://images.unsplash.com/photo-1595475884562-073c30d45670?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
+                                <span class="etiqueta-comparador etiqueta-despues">DESPUÉS</span>
+                            </div>
+                            <div class="slider-comparador"></div>
+                        </div>
+                        <h3 class="comparador-titulo">Peinado para Evento</h3>
+                    </div>
+
+                    <!-- Comparador 4: Alisado -->
+                    <div class="comparador-slide">
+                        <div class="comparador-antes-despues" style="aspect-ratio: 16/9;">
+                            <div class="imagen-antes" style="background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
+                                <span class="etiqueta-comparador etiqueta-antes">ANTES</span>
+                            </div>
+                            <div class="imagen-despues" style="background-image: url('https://images.unsplash.com/photo-1595475884562-073c30d45670?w=800&h=600&fit=crop'); background-size: cover; background-position: center;">
+                                <span class="etiqueta-comparador etiqueta-despues">DESPUÉS</span>
+                            </div>
+                            <div class="slider-comparador"></div>
+                        </div>
+                        <h3 class="comparador-titulo">Tratamiento de Alisado</h3>
+                    </div>
                 </div>
-                <div class="antes-despues-card">
-                    <div class="comparison">
-                        <div class="antes">
-                            <div class="placeholder-comparison">ANTES</div>
-                        </div>
-                        <div class="despues">
-                            <div class="placeholder-comparison">DESPUÉS</div>
-                        </div>
-                    </div>
-                    <p class="comparison-title">Corte y Brushing</p>
-                </div>
-                <div class="antes-despues-card">
-                    <div class="comparison">
-                        <div class="antes">
-                            <div class="placeholder-comparison">ANTES</div>
-                        </div>
-                        <div class="despues">
-                            <div class="placeholder-comparison">DESPUÉS</div>
-                        </div>
-                    </div>
-                    <p class="comparison-title">Peinado para Evento</p>
+
+                <!-- Botones de navegación -->
+                <button class="comparador-nav prev" onclick="moveComparadorSlide(-1)">❮</button>
+                <button class="comparador-nav next" onclick="moveComparadorSlide(1)">❯</button>
+
+                <!-- Indicadores -->
+                <div class="comparador-dots">
+                    <span class="comparador-dot active" onclick="goToComparadorSlide(0)"></span>
+                    <span class="comparador-dot" onclick="goToComparadorSlide(1)"></span>
+                    <span class="comparador-dot" onclick="goToComparadorSlide(2)"></span>
+                    <span class="comparador-dot" onclick="goToComparadorSlide(3)"></span>
                 </div>
             </div>
         </div>
